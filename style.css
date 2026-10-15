@@ -1,0 +1,106 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px hsla(24, 18%, 47%, 0.2);
+    width: 50%;
+    height: 450px;
+    margin: 120px auto;
+    flex-direction: row;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+.perfume-image{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    border-radius: 10px 0 0 10px;
+    padding: 0;
+    display: block;
+}
+.perfume-image-mobile{display: none;}
+
+.perfume-details{
+    flex: 1;
+    padding: 40px 40px 40px 40px;
+}
+.perfume-name{
+    font-family: 'Montserrat', serif;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    margin: 0 10px 10px 0; 
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 38px;
+    color: hsl(212, 21%, 14%);
+    line-height: 0.9;
+}
+p{
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.current-price{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+    margin-right: 20px;
+}
+.original-price{
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+.container button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .perfume-image{
+        border-radius: 10px 10px 0 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+        
+    }
+    .perfume-image-mobile{
+        border-radius: 10px 10px 0 0;
+        display: block;
+    }
+    p{
+        font-size: 16px;
+    }
+}
